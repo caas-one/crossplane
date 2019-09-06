@@ -7,14 +7,14 @@ from .ext.lua import LuaBlockPlugin
 
 __all__ = ['parse', 'lex', 'build', 'format']
 
-__title__ = 'crossplane'
+__title__ = 'cscrossplane'
 __summary__ = 'Reliable and fast NGINX configuration file parser.'
-__url__ = 'https://github.com/nginxinc/crossplane'
+__url__ = 'https://github.com/caas-one/crossplane'
 
 __version__ = '0.5.2'
 
 __author__ = 'Arie van Luttikhuizen'
-__email__ = 'aluttik@gmail.com'
+__email__ = 'yulibaozi@qq.com'
 
 __license__ = 'Apache 2.0'
 __copyright__ = 'Copyright 2018 NGINX, Inc.'
