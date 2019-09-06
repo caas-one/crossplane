@@ -11,7 +11,7 @@ __title__ = 'cscrossplane'
 __summary__ = 'Reliable and fast NGINX configuration file parser.'
 __url__ = 'https://github.com/caas-one/crossplane'
 
-__version__ = '0.5.2'
+__version__ = '0.5.3'
 
 __author__ = 'Arie van Luttikhuizen'
 __email__ = 'yulibaozi@qq.com'
