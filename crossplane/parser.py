@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import glob
 import os
+import json
 
 from .lexer import lex
 from .analyzer import analyze, enter_block_ctx
@@ -288,3 +289,7 @@ def register_external_parser(parser, directives):
     """
     for directive in directives:
         EXTERNAL_PARSERS[directive] = parser
+
+def parse_to_json(path):
+    dict = parse(path)
+    return json.dumps(dict)
