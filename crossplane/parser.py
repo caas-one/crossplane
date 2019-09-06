@@ -23,6 +23,12 @@ def _prepare_if_args(stmt):
         args[:] = args[start:end]
 
 
+
+def parse_to_json(path):
+    dict = parse(path)
+    return json.dumps(dict)
+
+
 def parse(filename, onerror=None, catch_errors=True, ignore=(), single=False,
         comments=False, strict=False, combine=False, check_ctx=True,
         check_args=True):
@@ -290,6 +296,3 @@ def register_external_parser(parser, directives):
     for directive in directives:
         EXTERNAL_PARSERS[directive] = parser
 
-def parse_to_json(path):
-    dict = parse(path)
-    return json.dumps(dict)
